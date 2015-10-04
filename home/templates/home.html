@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}
+Homepage
+{% endblock %}
+{% block page_title %}
+<h3>All 3D models</h3>
+{% endblock %}
+{% block content %}
+<ul>
+{% for mods in models3d %}
+    <li><a href ="{% url 'model3d.views.see_model3d' mods.owner.username mods.id%}" >{{ mods.title }} - {{ mods.description}} - Published at : {{mods.publishing_date |date:"d/m/Y" }} - By {{ mods.owner.username }}</a> | viewed {{ mods.viewed_count }} times</li>
+{% endfor %}
+</ul>
+{% endblock %}

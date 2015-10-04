@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}
+Authentification gate
+{% endblock %}
+{% block page_title %}
+<h3>Authentification gate</h3>
+{% endblock %}
+{% block content %}
+<form action="/users/login/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>
+{% endblock %}

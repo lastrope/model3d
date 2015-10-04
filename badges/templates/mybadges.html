@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h4> Won badges : {{ count }}</h4>
+<ul>
+{% for badge in badges %}
+    <li>{{ badge.title }} - {{ badge.description }}</li>
+{% endfor %}
+</ul>
+{% endblock %}

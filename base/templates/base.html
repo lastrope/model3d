@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Welcome {% endblock %}</title>
+    {% load staticfiles %}
+    <link href="{% static 'base.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+{% block nav %}
+{% if user.is_authenticated %}
+Hi {{ user }} - <a href="{% url 'home.views.homepage' %}">Homepage</a> - <a href="{% url 'model3d.views.add_model3d' %}">Add 3D model</a> - <a href="{% url 'model3d.views.owner_model3d' %}">View my 3D models</a> - <a href="{% url 'badges.views.mybadges' %}">My badges</a> - <a href="{% url 'users.views.logout_view' %}" class="logout">Logout</a>
+{% else %}
+ <a href="{% url 'users.views.logger' %}" class="login">Login</a> - <a href="{% url 'home.views.homepage' %}">Homepage</a>
+{% endif %}
+{% endblock %}
+{% block page_title %}
+{% endblock %}
+{% block content %}
+{% endblock %}
+</body>
+</html>

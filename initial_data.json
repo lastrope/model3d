@@ -1,0 +1,34 @@
+[
+  {
+    "model": "badges.Badges",
+    "pk": 1,
+    "fields": {
+      "title": "New Be",
+      "description": "First Model3d added"
+    }
+  },
+  {
+    "model": "badges.Badges",
+    "pk": 2,
+    "fields": {
+      "title": "Collector",
+      "description": "5 Model3d uploaded"
+    }
+  },
+  {
+    "model": "badges.Badges",
+    "pk": 3,
+    "fields": {
+      "title": "Star",
+      "description": "Model3d 1k viewed"
+    }
+  },
+  {
+    "model": "badges.Badges",
+    "pk": 4,
+    "fields": {
+      "title": "Pionner",
+      "description": "Registered from 1 year"
+    }
+  }
+]
