@@ -19,11 +19,11 @@ Main configuration package:
 - initial_data.json : Contains badges will be created during the first migrate
 - db.sqlite3 : database to exercise
   - Root account :
-      ID : franck
-      Pwd : test
+      - ID : franck
+      - Pwd : test
   - Lambda account :
-      ID : pa
-      Pwd : pa
+      - ID : pa
+      - Pwd : pa
 
 **Begin without db.sqlite3** :
 - Run command :
