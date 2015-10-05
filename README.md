@@ -32,12 +32,12 @@ Main configuration package:
 
 **Project functionnalities** :
 
-*NOT CONNECTED*
+- *NOT CONNECTED*
 - Login for all
 - Logout
 - Dynamic navigation (connected and not)
 - See all models3d on homepage
-*CONNECTED*
+- *CONNECTED*
 - Add Model3d
 - See own models3d posted yet
 - See won badges
