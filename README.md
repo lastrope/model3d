@@ -26,9 +26,9 @@ Main configuration package:
       - Pwd : pa
 
 **Begin without db.sqlite3** :
-- Run command :
-    python manage.py migrate
-    python manage.py createsuperuser
+- Run commands :
+    - python manage.py migrate
+    - python manage.py createsuperuser
 
 **Project functionnalities** :
 
