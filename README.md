@@ -37,7 +37,6 @@ Main configuration package:
 - Logout
 - Dynamic navigation (connected and not)
 - See all models3d on homepage
-- 
 *CONNECTED*
 - Add Model3d
 - See own models3d posted yet
